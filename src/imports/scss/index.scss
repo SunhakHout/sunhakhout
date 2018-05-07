@@ -1,0 +1,72 @@
+// compileCompressed: ../css/$1.min.css
+@import "./mixin/mixin.scss";
+
+body {
+  font-size: 14px;
+}
+
+.card {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+.container-profile {
+  @include middle-center;
+  padding: 200px 0;
+  position: relative;
+}
+
+.landing-bg-color {
+  @include full-parent;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(122,208,255,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(122,208,255,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(122,208,255,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(122,208,255,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(122,208,255,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(122,208,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7ad0ff', GradientType=0 );
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.landing-bg-img {
+  @include full-parent;
+  background-image: url("../images/landing-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: -2;
+}
+
+.aside-left {
+  @include middle-center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 350px;
+  padding: 30px;
+  // background: #aaa;
+}
+
+.rounded-profile {
+  border-radius: 100%;
+  border: 2px solid #aaa;
+  &.lg {
+    width: 150px;
+    height: 150px;
+  }
+  &.md {
+    width: 100px;
+    height: 100px;
+  }
+  &.sm {
+    width: 70px;
+    height: 70px;
+  }
+  &.xs {
+    width: 50px;
+    height: 50px;
+  }
+}

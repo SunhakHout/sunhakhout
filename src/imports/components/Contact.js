@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-export default class Profile extends React.Component {
+export default class Contact extends React.Component {
   constructor(props) {
     super(props)
   }
@@ -8,7 +8,7 @@ export default class Profile extends React.Component {
   render() {
     return (
       <Fragment>
-        <button className="btn btn-success"> Testing Bootstrap 3 </button>
+        Contact Info
       </Fragment>
     )
   }

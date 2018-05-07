@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import {Button} from 'react-bootstrap'
-import logo from './logo.svg';
-import './App.css';
-
-import Profile from './components/Profile'
+import React, { Component, Fragment } from 'react';
+import { ContainerProfile, LeftAside } from './imports'
+import './imports/style'
 
 class App extends Component {
   render() {
     return (
-      <Profile />
+      <Fragment>
+        {/* <ContainerProfile /> */}
+        <LeftAside />
+      </Fragment>
     );
   }
 }
